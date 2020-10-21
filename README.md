@@ -2,7 +2,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)<br>
 
-Website to invite people to a Halloween party by sharing a link!
+Website to invite people to a Halloween party by sharing a link.
 
 #### Avaliable features: ####
 

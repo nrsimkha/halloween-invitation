@@ -36,7 +36,7 @@ const filename = ext => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`
 
 
 module.exports = {
-    context: path.resolve(__dirname, 'src'),
+    context: path.join(__dirname, 'src'),
     mode: 'development',
     entry: {
         main: ['@babel/polyfill','./scripts/main.js'],
@@ -44,20 +44,22 @@ module.exports = {
     },
     output: {
         filename: filename('js'),
-        path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist/',
-        libraryExport: 'default'
+        path: path.join(__dirname, 'dist'),
+        publicPath: '/',
+        pathinfo: false,
     },
     resolve: {
         extensions: ['.js']
     },
     optimization: optimization(),
-    devtool: isDev ? 'source-map' : '',
+    devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname, '/dist/'),
         compress: true,
         port: 4200,
-        hot: isDev
+        hot: isDev,
+        stats: 'errors-only'
+          
     },
     plugins: [
        new HTMLWebpackPlugin({

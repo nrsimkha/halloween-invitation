@@ -11,7 +11,7 @@ import '../assets/images/game-background-desktop-2.jpg';
 
 
 
-console.log(rellax);
+
 const pumpkinEyes = document.querySelectorAll('#group-pumpkin-eyes path')
 const pumpkinEyesMobile = document.querySelectorAll('#mobile-svg #group-pumpkin-eyes path')
 const youInvitedButton = document.querySelector('.svg-header__button');

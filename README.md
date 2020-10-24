@@ -4,6 +4,8 @@
 
 Website to invite people to a Halloween party by sharing a link.
 
+https://halloween-invitation.web.app/
+
 #### Avaliable features: ####
 
 * Guests vote to choose Halloween menu 
